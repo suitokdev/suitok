@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Routing from "./routing";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { MainLayout } from "./components/layouts/MainLayout";
@@ -10,7 +10,7 @@ function AppComponent() {
     return (
         <App>
             <QueryClientProvider client={queryClient}>
-                <BrowserRouter>
+                <HashRouter>
                     <ConfigProvider
                         theme={{
                             algorithm: theme.darkAlgorithm,
@@ -20,7 +20,7 @@ function AppComponent() {
                             <Routing />
                         </MainLayout>
                     </ConfigProvider>
-                </BrowserRouter>
+                </HashRouter>
             </QueryClientProvider>
         </App>
     );
