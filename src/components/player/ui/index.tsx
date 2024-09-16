@@ -15,7 +15,7 @@ export const Player: FC<PlayerProps> = ({ url }) => {
             <ReactPlayer
                 url={url}
                 height="100%"
-                width="60vw"
+                width="100%"
                 loop
                 fallback={<Spin indicator={<LoadingOutlined style={{ fontSize: 48 }} spin />} />}
                 style={{
