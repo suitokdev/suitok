@@ -23,7 +23,7 @@ export const Sidebar: FC = () => {
                     <UploadOutlined width={32} height={32} />
                     <span className={s.text}>Upload</span>
                 </Link>
-                <Link to="/video/r0jOslMjQERyUFuYi8cgRB7N_xAg0UevOaUa2S1du2I" className={s.link}>
+                <Link to="/video/AC3B-r1gxfQIqmskbkY-BOhZ8OqXkkKHICgfarDZU3A" className={s.link}>
                     <VideoCameraOutlined width={32} height={32} />
                     <span className={s.text}>Demo</span>
                 </Link>
