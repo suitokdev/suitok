@@ -4,3 +4,10 @@
         display: grid
         grid-gap: 24px
         grid-template-columns: repeat(auto-fill, minmax(304px, 1fr))
+        @media ( max-width: 768px )
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr))
+        .card
+            height: 400px
+            width: 100%
+            @media ( max-width: 768px )
+                height: 300px

@@ -1,12 +1,24 @@
 @import '@/assets/style/vars.sass'
 
 aside
-    min-width: 200px
-    padding: 20px 8px 26px 8px
-    display: flex
-    flex-direction: column
-    justify-content: space-between
     height: 100%
+    overflow: hidden
+    @media ( max-width: 768px )
+        position: fixed
+        top: 61px
+        left: 0
+        right: 0
+        bottom: 0
+        height: calc(100% - 61px)
+        z-index: 1000
+        background-color: var(--color-surface-opacity)
+        backdrop-filter: blur(5px)
+    .sidebarWrapper
+        padding: 20px 8px 26px 8px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
     .wrapper
         display: flex
         flex-direction: column
@@ -24,3 +36,6 @@ aside
                 background-color: var(--color-secondary)
             .text
                 margin-left: 8px
+                white-space: nowrap
+        .svg
+            min-width: 18px
