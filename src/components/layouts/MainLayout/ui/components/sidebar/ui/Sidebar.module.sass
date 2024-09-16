@@ -1,0 +1,20 @@
+@import '@/assets/style/vars.sass'
+
+aside
+    min-width: 200px
+    padding: 20px 8px 26px 8px
+    .wrapper
+        display: flex
+        flex-direction: column
+        .link
+            padding: 12px
+            transition: background-color ease 300ms
+            cursor: pointer
+            +inter($size: 1.8rem)
+            text-decoration: none
+            border-radius: 4px
+            line-height: 18px
+            &:hover
+                background-color: var(--color-secondary)
+            .text
+                margin-left: 8px

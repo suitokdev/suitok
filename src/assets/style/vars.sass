@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap")
+
+:root
+    font-size: 10px
+    --color-surface: #1a1b1f
+    --color-divider: rgba(255, 255, 255, 0.12)
+    --color-primary: rgba(255, 255, 255, 0.9)
+    --color-primary-light: rgba(255, 255, 255, 0.8)
+    --color-primary-lighter: rgba(255, 255, 255, 0.6)
+    --color-secondary: rgba(255, 255, 255, 0.04)
+    --color-danger: #ff4d4f
+
+=inter($size: 1.6rem, $color: var(--color-primary), $weight: 500, )
+    font-family: "Inter", sans-serif
+    font-size: $size
+    font-weight: $weight
+    font-style: normal
+    color: $color
+
+body
+    +inter()

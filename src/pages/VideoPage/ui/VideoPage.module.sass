@@ -1,0 +1,32 @@
+@import '@/assets/style/vars'
+
+.wrapper
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    flex: 1 0 0
+    flex-direction: column
+    .meta
+        width: 60vw
+        +inter
+        padding-bottom: 16px
+        word-break: break-all
+.playerWrapper
+    position: relative
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: stretch
+    padding: 12px
+    .navBtns
+        position: absolute
+        right: 20px
+        bottom: 0px
+        top: 0px
+        display: flex
+        flex-direction: column
+        justify-content: center
+    .navBtn
+        cursor: pointer

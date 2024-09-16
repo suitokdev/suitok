@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+![DALL·E-2024-09-10-16.16](https://hackmd.io/_uploads/r1Rl5q4p0.jpg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Suitok - Decentralized Platform for Video Creators
 
-Currently, two official plugins are available:
+**Suitok** is an innovative decentralized Web3 application designed to elevate the interaction between video creators and their audience. We have developed a platform that allows users to upload, store, and share video content using advanced blockchain technology powered by the **Walrus** protocol.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How does it work?
 
-## Expanding the ESLint configuration
+Our project utilizes a decentralized infrastructure where all video files are uploaded and stored in **Walrus** nodes, ensuring data security, resilience, and independence. Through the **Sui Domain Name Service**, we have integrated a unique domain name for our project: **suitok.walrus.site**. This allows users to access the platform and content directly via Web3 technologies, offering maximum decentralization and transparency.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+All site files are publicly accessible via the link [www.suitok.walrus.site](mok), and the source code is open to everyone. You can review it on our GitHub repository at [github.suitokdev](https://github.com/suitokdev/suitok)
 
-- Configure the top-level `parserOptions` property like this:
+## Key features of Suitok:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Decentralized storage**: Videos uploaded by users are stored across Walrus nodes, eliminating dependency on centralized servers.
+- **Sui integration**: We plan to leverage Sui smart contracts to enhance data management, recommendations, and content interaction.
+- **Creator monetization**: We are developing a reward system for content creators, to be integrated with the Sui protocol, providing new opportunities for content monetization and audience engagement.
+- **Decentralized domains**: Suitok employs blockchain-based domain registration through Walrus, ensuring full autonomy and resilience for the site.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Why does this matter?
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+We are building a platform that supports the principles of decentralization, democratizing access to data storage and video content interaction. In a world where data is becoming increasingly centralized and controlled, Suitok represents a new chapter in media platforms, where users maintain control over their content.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## What's next?
+
+Suitok is actively working on implementing a smart voting and donation system for users. We aim to create a fair and transparent monetization framework where video creators are rewarded for their contributions, and users can directly influence the popularity of videos through blockchain tools.
+
+## Join us!
+
+We invite everyone to explore the possibilities of our platform and contribute to shaping a decentralized future for video content. Join Suitok today and be a part of the Web3 revolution!
+
+Stay connected with us on [Telegram](t.me/suitok) and [Twitter](https://x.com/Suitokofficial) for updates! Exciting things are coming soon, including the launch of our token and community **competitions** that will reward active members for their contributions to the protocol. Don't miss out—be an early participant and help shape the future of decentralized video platforms!
