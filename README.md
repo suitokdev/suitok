@@ -1,4 +1,4 @@
-![DALL·E-2024-09-10-16.16](https://hackmd.io/_uploads/r1Rl5q4p0.jpg)
+![DALL·E-2024-09-10-16.16](https://i.postimg.cc/LXWM6wK9/DALL-E-2024-09-10-16-16-01-A-Twitter-header-with-a-clean-modern-and-web3-aesthetic-featuring-a.webp)
 
 # Suitok - Decentralized Platform for Video Creators
 
@@ -8,14 +8,14 @@
 
 Our project utilizes a decentralized infrastructure where all video files are uploaded and stored in **Walrus** nodes, ensuring data security, resilience, and independence. Through the **Sui Domain Name Service**, we have integrated a unique domain name for our project: **suitok.walrus.site**. This allows users to access the platform and content directly via Web3 technologies, offering maximum decentralization and transparency.
 
-All site files are publicly accessible via the link [www.suitok.walrus.site](mok), and the source code is open to everyone. You can review it on our GitHub repository at [github.suitokdev](https://github.com/suitokdev/suitok)
+All site files are publicly accessible via the link [www.suitok.walrus.site](https://suitok.walrus.site), and the source code is open to everyone. You can review it on our GitHub repository at [github.suitokdev](https://github.com/suitokdev/suitok)
 
 ## Key features of Suitok:
 
-- **Decentralized storage**: Videos uploaded by users are stored across Walrus nodes, eliminating dependency on centralized servers.
-- **Sui integration**: We plan to leverage Sui smart contracts to enhance data management, recommendations, and content interaction.
-- **Creator monetization**: We are developing a reward system for content creators, to be integrated with the Sui protocol, providing new opportunities for content monetization and audience engagement.
-- **Decentralized domains**: Suitok employs blockchain-based domain registration through Walrus, ensuring full autonomy and resilience for the site.
+-   **Decentralized storage**: Videos uploaded by users are stored across Walrus nodes, eliminating dependency on centralized servers.
+-   **Sui integration**: We plan to leverage Sui smart contracts to enhance data management, recommendations, and content interaction.
+-   **Creator monetization**: We are developing a reward system for content creators, to be integrated with the Sui protocol, providing new opportunities for content monetization and audience engagement.
+-   **Decentralized domains**: Suitok employs blockchain-based domain registration through Walrus, ensuring full autonomy and resilience for the site.
 
 ## Why does this matter?
 
@@ -29,4 +29,4 @@ Suitok is actively working on implementing a smart voting and donation system fo
 
 We invite everyone to explore the possibilities of our platform and contribute to shaping a decentralized future for video content. Join Suitok today and be a part of the Web3 revolution!
 
-Stay connected with us on [Telegram](t.me/suitok) and [Twitter](https://x.com/Suitokofficial) for updates! Exciting things are coming soon, including the launch of our token and community **competitions** that will reward active members for their contributions to the protocol. Don't miss out—be an early participant and help shape the future of decentralized video platforms!
+Stay connected with us on [Telegram](https://t.me/suitok) and [Twitter](https://x.com/Suitokofficial) for updates! Exciting things are coming soon, including the launch of our token and community **competitions** that will reward active members for their contributions to the protocol. Don't miss out—be an early participant and help shape the future of decentralized video platforms!

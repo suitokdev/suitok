@@ -50,7 +50,22 @@ export const VideoPage = () => {
                             )}
                         </div>
                     </div>
-                    <div className={s.meta}>{data?.currentVideo.name}</div>
+                    <div className={s.meta}>
+                        <p className={s.name}>Name: {data?.currentVideo.name}</p>
+                        <p className={s.object}>
+                            Object:{" "}
+                            <a
+                                href={
+                                    "https://suiscan.xyz/testnet/object/" +
+                                    data?.currentVideo.objectId
+                                }
+                                target="_blank"
+                            >
+                                {data?.currentVideo.objectId}
+                            </a>
+                        </p>
+                        <p className={s.blob}>Blob ID: {data?.currentVideo.blobId}</p>
+                    </div>
                 </>
             )}
         </div>

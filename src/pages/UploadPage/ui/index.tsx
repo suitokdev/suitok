@@ -57,6 +57,7 @@ export const UploadPage = () => {
                 endEpoch: storage.endEpoch,
                 cost: createdObj.cost,
             });
+            setFileCustomName("");
         } catch (error) {
             message.error("HTTP Error");
             setError("HTTP Error");
