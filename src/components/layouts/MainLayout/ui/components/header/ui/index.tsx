@@ -28,7 +28,7 @@ export const Header = () => {
                 <div className={s.logo}></div>
                 <div className={s.search}>
                     <Search
-                        placeholder="Search video"
+                        placeholder="Search video by blob ID"
                         allowClear
                         onSearch={onSearch}
                         style={{ width: "100%" }}

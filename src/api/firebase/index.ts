@@ -26,7 +26,7 @@ class FirebaseCustomClient {
 
     public async getLastVideos(dto: GetLastVideosDTO) {
         const videosRef = collection(db, "videos");
-        const q = query(videosRef, orderBy("timestamp"), limit(dto.limit));
+        const q = query(videosRef, orderBy("timestamp", "desc"), limit(dto.limit));
         const querySnapshot = await getDocs(q);
         const res: VideoScheme[] = [];
         querySnapshot.forEach((doc) => {

@@ -27,7 +27,7 @@ export const Dragndrop: FC<DragndropProps> = ({
 }) => {
     const props: UploadProps = {
         name: fileName,
-        accept: "video/mp4",
+        accept: "video/mp4,video/webm",
         maxCount: 1,
         multiple: false,
         beforeUpload: (file) => {
@@ -46,7 +46,7 @@ export const Dragndrop: FC<DragndropProps> = ({
                 </p>
                 <p className="ant-upload-text">Click or drag video to this area to upload</p>
                 <p className="ant-upload-hint">
-                    Video must be in mp4 format and weigh less than 10 MB
+                    Video must be in mp4 or .webm format and weigh less than 10 MB
                 </p>
             </Dragger>
         </div>
