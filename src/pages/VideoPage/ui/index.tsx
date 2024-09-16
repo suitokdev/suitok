@@ -6,10 +6,14 @@ import { getVideoUrlByBlobId } from "../../../helpers/getVideoUrlByBlobId";
 import { useQuery } from "react-query";
 import { firebaseCustomClient } from "../../../api/firebase";
 import { Loader } from "../../../components/loader";
+import { useSwipeable } from "react-swipeable";
+import { useMouseScroll } from "../../../hooks/useMouseScroll";
+import { useMediaQuery } from "react-responsive";
 
 export const VideoPage = () => {
     const { id } = useParams();
     const navigate = useNavigate();
+    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
     const { data, isFetching } = useQuery({
         queryKey: ["video", id],
         queryFn: async () => {
@@ -25,30 +29,42 @@ export const VideoPage = () => {
     const clickPrev = () =>
         data?.previousVideo ? navigate("/video/" + data?.previousVideo.blobId) : null;
 
+    const handlers = useSwipeable({
+        onSwipedDown: clickPrev,
+        onSwipedUp: clickNext,
+        delta: 100,
+    });
+    useMouseScroll({
+        onScrollDown: clickPrev,
+        onScrollUp: clickNext,
+    });
+
     return (
-        <div className={s.wrapper}>
+        <div className={s.wrapper} {...handlers}>
             {isFetching ? (
                 <Loader />
             ) : (
                 <>
                     <div className={s.playerWrapper}>
                         <Player url={url} />
-                        <div className={s.navBtns}>
-                            {!!data?.nextVideo && (
-                                <UpCircleFilled
-                                    className={s.navBtn}
-                                    style={{ fontSize: "42px", marginBottom: "12px" }}
-                                    onClick={clickNext}
-                                />
-                            )}
-                            {!!data?.previousVideo && (
-                                <DownCircleFilled
-                                    className={s.navBtn}
-                                    style={{ fontSize: "42px" }}
-                                    onClick={clickPrev}
-                                />
-                            )}
-                        </div>
+                        {!isMobile && (
+                            <div className={s.navBtns}>
+                                {!!data?.nextVideo && (
+                                    <UpCircleFilled
+                                        className={s.navBtn}
+                                        style={{ fontSize: "42px", marginBottom: "12px" }}
+                                        onClick={clickNext}
+                                    />
+                                )}
+                                {!!data?.previousVideo && (
+                                    <DownCircleFilled
+                                        className={s.navBtn}
+                                        style={{ fontSize: "42px" }}
+                                        onClick={clickPrev}
+                                    />
+                                )}
+                            </div>
+                        )}
                     </div>
                     <div className={s.meta}>
                         <p className={s.name}>Name: {data?.currentVideo.name}</p>
