@@ -18,3 +18,12 @@
         height: 100%
     .search
         flex-basis: 40%
+        @media ( max-width: 768px )
+            flex-basis: 60%
+    .menuBtn
+        cursor: pointer
+        font-size: 24px
+        color: var(--color-primary)
+        transition: all ease 150ms
+        &:hover
+            color: var(--color-primary-lighter)

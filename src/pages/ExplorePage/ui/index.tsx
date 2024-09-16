@@ -18,11 +18,13 @@ export const ExplorePage = () => {
             <div className={s.wrapper}>
                 {data && data.length > 0
                     ? data.map((video) => (
-                          <VideoCard
-                              key={video.blobId + video.name}
-                              blobId={video.blobId}
-                              name={video.name}
-                          />
+                          <div className={s.card}>
+                              <VideoCard
+                                  key={video.blobId + video.name}
+                                  blobId={video.blobId}
+                                  name={video.name}
+                              />
+                          </div>
                       ))
                     : null}
             </div>

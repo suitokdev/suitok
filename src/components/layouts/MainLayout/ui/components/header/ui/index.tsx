@@ -2,14 +2,21 @@ import s from "./Header.module.sass";
 import { useNavigate } from "react-router-dom";
 import { Input } from "antd";
 import type { GetProps } from "antd";
-import { useState } from "react";
+import { FC, useState } from "react";
+import { MenuOutlined } from "@ant-design/icons";
+import { useMediaQuery } from "react-responsive";
 
 type SearchProps = GetProps<typeof Input.Search>;
 
 const { Search } = Input;
 
-export const Header = () => {
+interface HeaderProps {
+    onMenuClick?: () => void;
+}
+
+export const Header: FC<HeaderProps> = ({ onMenuClick }) => {
     const [search, setSearch] = useState("");
+    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
     const navigate = useNavigate();
     const validateId = (value: string): boolean => !!value;
@@ -25,7 +32,7 @@ export const Header = () => {
     return (
         <div className={s.header}>
             <div className={s.wrapper}>
-                <div className={s.logo}></div>
+                {!isMobile && <div className={s.logo}></div>}
                 <div className={s.search}>
                     <Search
                         placeholder="Search video by blob ID"
@@ -36,7 +43,9 @@ export const Header = () => {
                         onChange={(e) => changeHandler(e.target.value)}
                     />
                 </div>
-                <div className={s.other}></div>
+                <div className={s.other}>
+                    {!!onMenuClick && <MenuOutlined onClick={onMenuClick} className={s.menuBtn} />}
+                </div>
             </div>
         </div>
     );
