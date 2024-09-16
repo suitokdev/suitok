@@ -1,0 +1,1 @@
+export const MAX_FILE_WEIGHT = 10485760;

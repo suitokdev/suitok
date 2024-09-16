@@ -1,0 +1,74 @@
+@import '@/assets/style/vars'
+
+.mdview
+    sup
+        font-size: 12px
+        vertical-align: super
+    sub
+        font-size: 12px
+        vertical-align: sub
+    li
+        p, code
+            display: contents
+    h2, h1
+        +inter($size: 18px, $color: var(--color-primary-light), $weight: 700)
+        margin: 26px 0 8px
+    h3
+        +inter($size: 16px, $color: var(--color-primary-light), $weight: 700)
+        margin: 24px 0 8px
+    h4
+        +inter($size: 14px, $color: var(--color-primary-light), $weight: 700)
+        margin: 16px 0 8px
+    p
+        +inter($size: 14px, $color: var(--color-primary-light), $weight: 400)
+        line-height: 22px
+        margin-bottom: 12px
+    blockquote
+        padding: 0 1em
+        color: #8b949e
+        border-left: 0.25em solid #7E9BFC
+        margin-top: 16px
+        margin-bottom: 16px
+    ul, ol
+        margin: 8px 0
+    ul li, ol li
+        list-style: inside
+        +inter($size: 14px, $color: var(--color-primary-light), $weight: 400)
+    ol li
+        list-style-type: decimal
+    table
+        display: block
+        width: 100%
+        width: max-content
+        max-width: 100%
+        overflow: auto
+        color: black
+        thead
+            display: table-header-group
+            vertical-align: middle
+            border-color: inherit
+        tbody tr:nth-child(odd)
+            background-color: #f6f8fa
+        tr
+            background-color: #fff
+            border-top: #21262d
+        th
+            padding: 6px 13px
+            border: 1px solid #30363d
+        tbody
+            display: table-row-group
+            vertical-align: middle
+            border-color: inherit
+        td
+            padding: 6px 13px
+            border: 1px solid #30363d
+        img
+            max-width: 100%
+            margin: 24px 0
+    code
+        white-space: pre
+        word-break: normal
+        word-spacing: normal
+        word-wrap: normal
+    span
+        +inter($size: 14px, $color: var(--color-primary-lighter), $weight: 400)
